@@ -93,4 +93,4 @@ function verifyToken(req, res, next) {
     res.status(401).send({ result: "Not Authorized" });
   }
 }
-app.listen(5000);
+app.listen(process.env.PORT || 5000);
