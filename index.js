@@ -42,7 +42,11 @@ app.post("/add-product", verifyToken, async (req, res) => {
 });
 
 app.get("/products", verifyToken, async (req, res) => {
+  Product.find({}, (err, res) => {
+    console.log(res);
+  });
   const products = await Product.find();
+  console.log(products);
   if (products.length) return res.send(products);
   else return res.send({ result: "No result found" });
 });
