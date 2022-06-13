@@ -15,4 +15,8 @@ Welcome to E-commerce Dashboard Backend Repo. Its live: https://e-comm-dashboard
 ## Tech Stack: 
 Node, Express, mongoose, Jwt
 
+## Coming Up:
+- Pagination
+- Sort by price Filter
+
 Hosted on heroku :) For frontend repo, please refer: https://github.com/shivamgupta08/e-comm-frontend
