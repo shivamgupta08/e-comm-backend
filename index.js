@@ -64,6 +64,7 @@ app.put("/products/:id", verifyToken, async (req, res) => {
     { $set: req.body }
   );
   res.send(result);
+  // console.log('test')
 });
 
 app.get("/search/:key", verifyToken, async (req, res) => {
